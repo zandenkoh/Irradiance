@@ -1,8 +1,9 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     margin: 0;
     padding: 20px;
-    background: #f9f9f9;
+    background: #fcfcfc;
     user-select: none;
 }
 
@@ -185,6 +186,12 @@ a:hover {
     border-radius: 10px;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    transition: 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+
   }
 
   .card:hover .card-button {
