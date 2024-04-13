@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review | Inverse Functions</title>
+  <link rel="stylesheet" href="../Functions/functions.css">
+  <link rel="shortcut icon" type="image/png" href="../../../calculus-favicon-3.png">
+  <script src="https://kit.fontawesome.com/a47fae704c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <a class="back" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="return" href="javascript:history.go(-1);"><i class="fa-solid fa-rotate-left"></i></a>
+
+  <div class="content-area">
+    <div class="content">
+      <h1 class="content-title">Inverse Functions</h1>
+      <p class="content-title-p">In the last example from the previous lesson, we looked at the two functions \( f(x) = 3x - 2 \) and \( g(x) = \frac{1}{3}x + \frac{2}{3} \) and saw that:</p>        
+<p style="text-align: center;">\( (f \circ g)(x) = (g \circ f)(x) = x \)</p>
+<p>and as noted in that section, this means that there is a nice relationship between these two functions. Let’s see just what that relationship is. Consider the following evaluations:</p>
+<p style="text-align: center;">\( f(-1) = 3(-1) - 2 = -5 \) ⇒ \( g(-5) = \frac{-5}{3} + \frac{2}{3} = \frac{-3}{3} = -1 \)</p>
+<p style="text-align: center;">\( g(2) = \frac{2}{3} + \frac{2}{3} = \frac{4}{3} \) ⇒ \( f\left(\frac{4}{3}\right) = 3\left(\frac{4}{3}\right) - 2 = 4 - 2 = 2 \)</p>
+<p>In the first case, we plugged \( x = -1 \) into \( f(x) \) and got a value of -5. We then turned around and plugged \( x = -5 \) into \( g(x) \) and got a value of -1, the number that we started off with.</p>
+<p>In the second case, we did something similar. Here we plugged \( x = 2 \) into \( g(x) \) and got a value of \(\frac{4}{3}\). We turned around and plugged this into \( f(x) \) and got a value of 2, which is again the number that we started with.</p>
+<p>Note that we really are doing some function composition here. The first case is really:</p>
+<p style="text-align: center;">\( (g \circ f)(-1) = g[f(-1)] = g[-5] = -1 \)</p>
+<p>and the second case is really:</p>
+<p style="text-align: center;">\( (f \circ g)(2) = f[g(2)] = f\left(\frac{4}{3}\right) = 2 \)</p>
+<p>Note as well that these both agree with the formula for the compositions that we found in the previous section. We get back out of the function evaluation the number that we originally plugged into the composition.</p>
+<p>So, just what is going on here? In some way, we can think of these two functions as undoing what the other did to a number. In the first case, we plugged \( x = -1 \) into \( f(x) \) and then plugged the result from this function evaluation back into \( g(x) \), and in some way \( g(x) \) undid what \( f(x) \) had done to \( x = -1 \) and gave us back the original \( x \) that we started with.</p>
+<p>Function pairs that exhibit this behavior are called <b>inverse functions</b>. Before formally defining inverse functions and the notation that we’re going to use for them, we need to get a definition out of the way.</p>
+<p>A function is called <b>one-to-one</b> if no two values of \( x \) produce the same \( y \). Mathematically, this is the same as saying:</p>
+<p style="text-align: center;">\( f(x_1) \neq f(x_2) \) whenever \( x_1 \neq x_2 \)</p>
+<p>So, a function is one-to-one if whenever we plug different values into the function we get different function values.</p>
+<p>Sometimes it is easier to understand this definition if we see a function that isn’t one-to-one. Let’s take a look at a function that isn’t one-to-one. The function \( f(x) = x^2 \) is not one-to-one because both \( f(-2) = 4 \) and \( f(2) = 4 \). In other words, there are two different values of \( x \) that produce the same value of \( y \). Note that we can turn \( f(x) = x^2 \) into a one-to-one function if we restrict ourselves to \( 0 \leq x < \infty \). This can sometimes be done with functions.</p>
+<p>Showing that a function is one-to-one is often tedious and/or difficult. For the most part, we are going to assume that the functions that we’re going to be dealing with in this course are either one-to-one or we have restricted the domain of the function to get it to be a one-to-one function.</p>
+<p>Now, let’s formally define just what inverse functions are. Given two one-to-one functions \( f(x) \) and \( g(x) \) if:</p>
+<p>\[
+(f \circ g)(x) = x \quad \text{AND} \quad (g \circ f)(x) = x
+\]</p>
+<p>then we say that \( f(x) \) and \( g(x) \) are inverses of each other. More specifically, we will say that \( g(x) \) is the inverse of \( f(x) \) and denote it by:</p>
+<p>\[
+g(x) = f^{-1}(x)
+\]</p>
+<p>Likewise, we could also say that \( f(x) \) is the inverse of \( g(x) \) and denote it by:</p>
+<p>\[
+f(x) = g^{-1}(x)
+\]</p>
+<p>The notation that we use really depends on the problem. In most cases, either is acceptable.</p>
+<p>For the two functions that we started off this section with, we could write either of the following two sets of notation:</p>
+<p>\[
+f(x) = 3x - 2 \quad f^{-1}(x) = x^3 + \frac{2}{3}
+\]</p>
+<p>\[
+g(x) = x^3 + \frac{2}{3} \quad g^{-1}(x) = 3x - 2
+\]</p>
+<p>Now, be careful with the notation for inverses. The “-1” is NOT an exponent despite the fact that it sure does look like one! When dealing with inverse functions, we’ve got to remember that:</p>
+<p style="text-align: center;">\( f^{-1}(x) \neq \frac{1}{f(x)} \)</p>
+<p>This is one of the more common mistakes that students make when first studying inverse functions.</p>
+<p>The process for finding the inverse of a function is a fairly simple one although there are a couple of steps that can on occasion be somewhat messy.</p>
+
+      <hr>
+
+      <div class="next" id="next">
+        <div class="next-lesson">
+            <a href="../Trigenometry Functions/trigenometry-functions.html">Next Lesson</a>
+          </div>
+          <!--<div class="next-course">
+            <a href="../../Limits/limits.html">Next Course</a>
+          </div>-->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.sidebar-list a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const href = this.getAttribute('href');
+        const targetElement = document.querySelector(href);
+        const offset = targetElement.offsetTop - (window.innerHeight * 0);
+  
+        scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+});
+  </script>
+</body>
+</html>
+
+      <!-- Embedded YouTube Video
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUvTyaaNkzM?si=aEh-5LHKQfXvL6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>-->
