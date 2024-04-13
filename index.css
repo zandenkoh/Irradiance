@@ -1,5 +1,6 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
     margin: 0px;
     background: #f6f6f6;
     user-select: none;
@@ -236,6 +237,7 @@ a:hover {
     margin-top: -20px;
     padding: 10px;
     z-index: 101;
+    box-shadow: 0 -100px 150px #0000007b;
 }
 
 #search-input {
@@ -329,6 +331,7 @@ a:hover {
     list-style: none;
     text-decoration: none;
     transition: 0.2s ease;
+
 }
 
 .grid-item:hover {
@@ -433,8 +436,8 @@ a:hover {
 
 .search-results-active .image-container {
     flex: 1;
-    max-width: 35%;
-    height: 200px;
+    max-width: 45%;
+    height: 100%;
     overflow: hidden;
     border-radius: 7px;
 }
@@ -443,7 +446,7 @@ a:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
 }
 
 .search-results-active .content-container {
