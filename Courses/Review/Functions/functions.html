@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review | Functions</title>
+  <link rel="stylesheet" href="functions.css">
+  <link rel="shortcut icon" type="image/png" href="../../../calculus-favicon-3.png">
+  <script src="https://kit.fontawesome.com/a47fae704c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <a class="back" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="return" href="javascript:history.go(-1);"><i class="fa-solid fa-rotate-left"></i></a>
+
+  <div class="content-area">
+    <div class="content">
+      <h1 class="content-title">Functions</h1>
+      <p class="content-title-p">In this section we're going to make sure that you're familiar with functions and function notation. Both will appear in almost every section in a Calculus class so you will need to be able to deal with them.</p>
+      <p>First, what exactly is a function? The simplest definition is an equation will be a function if, for any \( x \) in the domain of the equation (the domain is all the \( x \)'s that can be plugged into the equation), the equation will yield exactly one value of \( y \) when we evaluate the equation at a specific \( x \).</p>
+      
+      
+      <hr>
+      <p><b>Example 1</b> Let's determine if the following are functions.</p>
+      <p>( a ) \( y=x^2 +1 \)</p>
+      <p>This first one is a function. Given an \( x \) , there is only one way to square it and then add \( 1 \) to the result. So, no matter what value of \( x \) you put into the equation, there is only one possible value of \( y \) when we evaluate the equation at that value of \( x \) .</p>
+      <p>( b ) \( y^2=x +1 \)</p>
+      <p>The only difference between this equation and the first is that we moved the exponent off the \( x \) and onto the \( y \) . This small change is all that is required, in this case, to change the equation from a function to something that isn't a function.</p>
+      <p>To see that this isn't a function is fairly simple. Choose a value of \( x \) , say \( x=3 \) and plug this into the equation.</p>
+      <p>\( y^2=3+1=4 \)</p>
+      <p>Now, there are two possible values of \( y \) that we could use here. We could use \( y=2 \) or \( y=-2 \) . Since there are two possible values of \( y \) that we get from a single \( x \) this equation isn't a function.</p>
+      <p>Note that this only needs to be the case for a single value of \( x \) to make an equation not be a function. For instance, we could have used \( x=-1 \) and in this case, we would get a single \( y(y=0) \). However, because of what happens at \( x=3 \) this equation will not be a function.</p>
+      
+      
+      <hr>
+      <p>Next, we need to take a quick look at function notation. Function notation is nothing more than a fancy way of writing the \( y \) in a function that will allow us to simplify notation and some of our work a little.</p>
+      <p>Let’s take a look at the following function.</p>
+      <p>\[
+        \begin{align*}
+        y = 2x^2 - 5x + 3 \\
+        \end{align*}
+        \]</p>
+      <p>Using function notation, we can write this as any of the following:</p>
+      <p>\[
+        \begin{align*}
+        f(x) = 2x^2 - 5x + 3 \\
+        g(x) = 2x^2 - 5x + 3 \\
+        h(x) = 2x^2 - 5x + 3 \\
+        R(x) = 2x^2 - 5x + 3 \\
+        ... \\
+        \end{align*}
+        \]</p>
+      <p>Recall that this is NOT a letter times \( x \), this is just a fancy way of writing \( y \).</p>
+      <p>So, why is this useful? Well, let’s take the function above and let’s get the value of the function at \( x = -3 \). Using function notation, we represent the value of the function at \( x = -3 \) as \( f(-3) \). Function notation gives us a nice compact way of representing function values.</p>
+      <p>Now, how do we actually evaluate the function? That’s really simple. Everywhere we see an \( x \) on the right side we will substitute whatever is in the parenthesis on the left side. For our function this gives:</p>
+      <p>\[
+        \begin{align*}
+        f(-3) &= 2(-3)^2 - 5(-3) + 3 \\
+        &= 2(9) + 15 + 3 \\
+        &= 18 + 15 + 3 \\
+        &= 36
+        \end{align*}
+        \]</p>
+        
+        
+        <hr>
+        <p><b>Example 2</b> Given \( f(x) = -x^2 + 6x - 11 \), find each of the following:</p>
+        <p>a) \( f(2) \)<br>
+        b) \( f(-10) \)<br>
+        c) \( f(t) \)<br>
+        d) \( f(t-3) \)<br>
+        e) \( f(x-3) \)<br>
+        f) \( f(4x-1) \)</p>
+        
+        
+        <hr>
+        <p>All throughout a calculus course we will be finding roots of functions. A root of a function is nothing more than a number for which the function is zero. In other words, finding the roots of a function \( g(x) \), is equivalent to solving \( g(x) = 0 \).</p>
+        
+        
+        <hr>
+        <p><b>Example 3</b> Determine all the roots of \( f(t) = 9t^3 - 18t^2 + 6t \).</p>
+        <p>So, we will need to solve:</p>
+        <p>\[
+        9t^3 - 18t^2 + 6t = 0
+        \]</p>
+        <p>First, we should factor the equation as much as possible. Doing this gives:</p>
+        <p>\[
+        3t(3t^2 - 6t + 2) = 0
+        \]</p>
+        <p>Next recall that if a product of two things is zero then one (or both) of them had to be zero. This means that:</p>
+        <p>\[
+        3t = 0 \quad \text{or} \quad 3t^2 - 6t + 2 = 0
+        \]</p>
+        <p>From the first, it’s clear that one of the roots must then be \( t = 0 \). To get the remaining roots we will need to use the quadratic formula on the second equation. Doing this gives:</p>
+        <p>\[
+        t = \frac{-( -6) \pm \sqrt{(-6)^2 - 4(3)(2)}}{2(3)} = \frac{6 \pm \sqrt{12}}{6} = \frac{6 \pm \sqrt{4 \cdot 3}}{6} = \frac{6 \pm 2\sqrt{3}}{6} = \frac{3 \pm \sqrt{3}}{3} = 1 \pm \frac{1}{3}\sqrt{3} = 1 \pm \frac{1}{\sqrt{3}}
+        \]</p>
+        <p>In order to remind you how to simplify radicals we gave several forms of the answer.</p>
+        <p>To complete the problem, here is a complete list of all the roots of this function:</p>
+        <p>\[
+        t = 0, \quad t = \frac{3 + \sqrt{3}}{3}, \quad t = \frac{3 - \sqrt{3}}{3}
+        \]</p>
+        <p>Note we didn’t use the final form for the roots from the quadratic. This is usually where we’ll stop with the simplification for these kinds of roots. Also note that, for the sake of the practice, we broke up the compact form for the two roots of the quadratic. You will need to be able to do this so make sure that you can.</p>
+        
+        
+        <hr>
+        <p>This example had a couple of points other than finding roots of functions.</p>
+        <p>The first was to remind you of the quadratic formula. This won’t be the last time that you’ll need it in this class.</p>
+        <p>The second was to get you used to seeing “messy” answers. In fact, the answers in the above example are not really all that messy. However, most students come out of an Algebra class very used to seeing only integers and the occasional “nice” fraction as answers.</p>
+        <p>So, here is fair warning. In this class I often will intentionally make the answers look “messy” just to get you out of the habit of always expecting “nice” answers. In “real life” (whatever that is) the answer is rarely a simple integer such as two. In most problems the answer will be a decimal that came about from a messy fraction and/or an answer that involved radicals.</p>
+        <p>One of the more important ideas about functions is that of the domain and range of a function. In simplest terms the domain of a function is the set of all values that can be plugged into a function and have the function exist and have a real number for a value. So, for the domain we need to avoid division by zero, square roots of negative numbers, logarithms of zero and logarithms of negative numbers (if not familiar with logarithms we’ll take a look at them a little later), etc. The range of a function is simply the set of all possible values that a function can take.</p>
+        
+        
+        <hr>
+        <p><b>Example 4</b> Find the domain and range of each of the following functions:</p>
+        <p>a) \( f(x) = 5x - 3 \)<br>
+        b) \( g(t) = \sqrt{4 - 7t} \)<br>
+        c) \( h(x) = -2x^2 + 12x + 5 \)<br>
+        d) \( f(z) = |z - 6| - 3 \)<br>
+        e) \( g(x) = 8 \)</p>
+
+
+        <hr>
+        <p>In general, determining the range of a function can be somewhat difficult. As long as we restrict ourselves down to “simple” functions, some of which we looked at in the previous example, finding the range is not too bad, but for most functions it can be a difficult process.</p>
+        <p>Because of the difficulty in finding the range for a lot of functions we had to keep those in the previous set somewhat simple, which also meant that we couldn’t really look at some of the more complicated domain examples that are liable to be important in a Calculus course. So, let’s take a look at another set of functions only this time we’ll just look for the domain.</p>
+        
+        
+        <hr>
+        <p><b>Example 5</b> Find the domain of each of the following functions:</p>
+        <p>a) \( f(x) = \frac{x - 4}{x^2 - 2x - 15} \)<br>
+        b) \( g(t) = \sqrt{6 + t - t^2} \)<br>
+        c) \( h(x) = x\sqrt{x^2 - 9} \)</p>
+
+
+
+        <hr>
+        <p>The next topic that we need to discuss here is that of function composition. The composition of \( f(x) \) and \( g(x) \) is</p>
+        <p>\((f \circ g)(x) = f(g(x))\).</p>
+        <p>In other words, compositions are evaluated by plugging the second function listed into the first function listed. Note as well that order is important here. Interchanging the order will more often than not result in a different answer.</p>
+        
+        
+        <hr>
+        <p><b>Example 6</b> Given \( f(x) = 3x^2 - x + 10 \) and \( g(x) = 1 - 20x \), find each of the following:</p>
+        <p>a) \((f \circ g)(5)\)<br>
+        b) \((f \circ g)(x)\)<br>
+        c) \((g \circ f)(x)\)<br>
+        d) \((g \circ g)(x)\)</p>
+
+
+        <hr>
+        <p><b>Example 7</b> Given \( f(x) = 3x - 2 \) and \( g(x) = \frac{1}{3}x + \frac{2}{3} \), find each of the following:</p>
+        <p>a) \((f \circ g)(x)\)<br>
+        b) \((g \circ f)(x)\)</p>
+        
+      <!-- Embedded YouTube Video
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUvTyaaNkzM?si=aEh-5LHKQfXvL6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>-->
+      <hr>
+
+      <div class="next" id="next">
+        <div class="next-lesson">
+            <a href="../Inverse Functions/inverse-functions.html">Next Lesson</a>
+          </div>
+          <!--<div class="next-course">
+            <a href="../../Limits/limits.html">Next Course</a>
+          </div>-->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.sidebar-list a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const href = this.getAttribute('href');
+        const targetElement = document.querySelector(href);
+        const offset = targetElement.offsetTop - (window.innerHeight * 0);
+  
+        scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+});
+  </script>
+</body>
+</html>
