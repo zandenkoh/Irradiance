@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review | Trigonometry Functions</title>
+  <link rel="stylesheet" href="../Functions/functions.css">
+  <link rel="shortcut icon" type="image/png" href="../../../calculus-favicon-3.png">
+  <script src="https://kit.fontawesome.com/a47fae704c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <a class="back" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="return" href="javascript:history.go(-1);"><i class="fa-solid fa-rotate-left"></i></a>
+
+  <div class="content-area">
+    <div class="content">
+      <h1 class="content-title">Trigonometry Functions</h1>
+      <p class="content-title-p">The intent of this lesson is to remind you of some of the more important (from a Calculus standpoint…) topics from a trig class. One of the most important (but not the first) of these topics will be how to use the unit circle. We will leave the most important topic to the next section.</p>        
+      <p>First, let’s start with the six trig functions and how they relate to each other:</p>
+      <p style="text-align: left;">\( \sin(x) \), <br>
+        \( \cos(x) \), <br>
+        \( \tan(x) = \frac{\sin(x)}{\cos(x)} \), <br>
+        \( \sec(x) = \frac{1}{\cos(x)} \), <br>
+        \( \cot(x) = \frac{\cos(x)}{\sin(x)} = \frac{1}{\tan(x)} \), <br>
+        \( \csc(x) = \frac{1}{\sin(x)} \)
+      </p>
+      <p>Recall as well that all the trig functions can be defined in terms of a right triangle.</p>
+      <img src="https://tutorial.math.lamar.edu/Classes/CalcI/TrigFcns_Files/image001.png">
+      <p>From this right triangle we get the following definitions of the six trig functions:</p>
+      <P>\( \cos \theta = \frac{adjacent}{hypotenuse} \), <br>
+        \( \sin \theta = \frac{opposite}{hypotenuse} \), <br>
+        \( \tan \theta = \frac{opposite}{adjacent} \), <br>
+        \( \cot \theta = \frac{adjacent}{opposite} \), <br>
+        \( \sec \theta = \frac{hypotenuse}{adjacent} \), <br>
+        \( \csc \theta = \frac{hypotenuse}{opposite} \)
+      </P>
+      <p>Remembering both the relationship between all six of the trig functions and their right triangle definitions will be useful in this course on occasion.</p>
+
+      
+      
+      <div class="next" id="next">
+        <div class="next-lesson">
+            <a href="../Solving Trig Equations/solving-trig-equations.html">Next Lesson</a>
+          </div>
+          <!--<div class="next-course">
+            <a href="../../Limits/limits.html">Next Course</a>
+          </div>-->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.sidebar-list a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const href = this.getAttribute('href');
+        const targetElement = document.querySelector(href);
+        const offset = targetElement.offsetTop - (window.innerHeight * 0);
+  
+        scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+});
+  </script>
+</body>
+</html>
+
+      <!-- Embedded YouTube Video
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUvTyaaNkzM?si=aEh-5LHKQfXvL6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>-->
