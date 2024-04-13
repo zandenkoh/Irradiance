@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review | Exponential Functions</title>
+  <link rel="stylesheet" href="../Functions/functions.css">
+  <link rel="shortcut icon" type="image/png" href="../../../calculus-favicon-3.png">
+  <script src="https://kit.fontawesome.com/a47fae704c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <a class="back" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="return" href="javascript:history.go(-1);"><i class="fa-solid fa-rotate-left"></i></a>
+
+  <div class="content-area">
+    <div class="content">
+      <h1 class="content-title">Exponential Functions</h1>
+      <p class="content-title-p"></p>        
+      <p>
+        In this section, we're going to review one of the more common functions in both calculus and the sciences. However, before getting to this function, let’s take a much more general approach to things.
+      </p>
+      
+      <p>
+        Let’s start with \( b > 0 \), \( b \neq 1 \). An exponential function is then a function in the form:
+        \[
+        f(x) = b^x
+        \]
+      </p>
+      
+      <p>
+        Note that we avoid \( b = 1 \) because that would give the constant function \( f(x) = 1 \). We avoid \( b = 0 \) since this would also give a constant function, and we avoid negative values of \( b \) for the following reason.
+      </p>
+      
+      <p>
+        Let’s, for a second, suppose that we did allow \( b \) to be negative and look at the following function:
+        \[
+        g(x) = (-4)^x
+        \]
+      </p>
+      
+      <p>
+        Let’s do some evaluation:
+        \[
+        g(2) = (-4)^2 = 16
+        \]
+        \[
+        g\left(\frac{1}{2}\right) = (-4)^{\frac{1}{2}} = \sqrt{-4} = 2i
+        \]
+      </p>
+      
+      <p>
+        So, for some values of \( x \) we will get real numbers and for other values of \( x \) we will get complex numbers. We want to avoid this, so if we require \( b > 0 \) this will not be a problem.
+      </p>
+      
+      <p>
+        Let’s take a look at a couple of exponential functions.
+      </p>
+      
+      <hr>
+      <p>
+        <strong>Example 1:</strong> Sketch the graph of \( f(x) = 2^x \) and \( g(x) = \left(\frac{1}{2}\right)^x \).
+      </p>
+
+      <hr>
+      <p><b>Properties of \( f(x) = b^x \):</b></p>
+        <ul>
+            <p>1. \( f(0) = 1 \). The function will always take the value of 1 at \( x = 0 \).</p>
+            <p>2. \( f(x) \neq 0 \). An exponential function will never be zero.</p>
+            <p>3. \( f(x) > 0 \). An exponential function is always positive.</p>
+            <p>4. The previous two properties can be summarized by saying that the range of an exponential function is \( (0, \infty) \).</p>
+            <p>5. The domain of an exponential function is \( (-\infty, \infty) \). In other words, you can plug every \( x \) into an exponential function.</p>
+            <p>6. If \( 0 < b < 1 \) then:
+              \[
+              f(x) \rightarrow 0 \text{ as } x \rightarrow \infty
+              \]
+              \[
+              f(x) \rightarrow \infty \text{ as } x \rightarrow -\infty
+              \]</p>
+            
+            <p>7. If \( b > 1 \) then:
+              \[
+              f(x) \rightarrow \infty \text{ as } x \rightarrow \infty
+              \]
+              \[
+              f(x) \rightarrow 0 \text{ as } x \rightarrow -\infty
+              \]</p>
+        </ul>
+      </p>
+      <hr>
+      <p>
+        These will all be very useful properties to recall at times as we move throughout this course (and later Calculus courses for that matter…).
+      </p>
+      
+      <p>
+        There is a very important exponential function that arises naturally in many places. This function is called the <b>natural exponential function</b>. However, for most people, this is simply the exponential function.
+      </p>
+      <hr>
+      <p>
+        <b>Definition:</b> The natural exponential function is \( f(x) = e^x \), where \( e = 2.71828182845905\dots \).
+      </p>
+      <hr>
+      <p>
+        So, since \( e > 1 \) we also know that
+        \(
+        e^x \rightarrow \infty \text{ as } x \rightarrow \infty
+        \)
+        and
+        \(
+        e^x \rightarrow 0 \text{ as } x \rightarrow -\infty
+        \)
+      </p>
+      
+      <p>
+        Let’s take a quick look at an example.
+      </p>
+      <hr>
+      <p>
+        <strong>Example 2:</strong> Sketch the graph of \( h(t) = 1 - 5e^{1 - t^2} \).
+      </p>
+      <hr>
+      <p>The main point behind this problem is to make sure you can do this type of evaluation, so make sure that you can get the values that we graphed in this example. You will be asked to do this kind of evaluation on occasion in this class.</p>
+      <p>You will be seeing exponential functions in pretty much every chapter in this class, so make sure that you are comfortable with them.</p>
+      
+      
+      
+      <div class="next" id="next">
+        <div class="next-lesson">
+            <a href="../Logarithm Functions/logarithm-functions.html">Next Lesson</a>
+          </div>
+          <!--<div class="next-course">
+            <a href="../../Limits/limits.html">Next Course</a>
+          </div>-->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.sidebar-list a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const href = this.getAttribute('href');
+        const targetElement = document.querySelector(href);
+        const offset = targetElement.offsetTop - (window.innerHeight * 0);
+  
+        scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+});
+  </script>
+</body>
+</html>
+
+      <!-- Embedded YouTube Video
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUvTyaaNkzM?si=aEh-5LHKQfXvL6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>-->
