@@ -1,0 +1,254 @@
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    margin: 20px;
+  }
+
+
+
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0px;
+    box-shadow: 0 0px 10px #00000048;
+    backdrop-filter: blur(7px);
+    z-index: 100;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    z-index: 200;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    z-index: 102;
+
+}
+
+.logo span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 102;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #000000;
+}
+
+.nav-ul-1 {
+    margin-left: 0;
+}
+
+li {
+    margin-left: 40px;
+    padding: 20px 0;
+}
+
+.navbar a {
+    padding: 20px 18px;
+
+    color: #000000b6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 0.3px;
+    transition: 0s;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+a:hover {
+    color: #ee4545;
+}
+
+.cta {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.cta a {
+    background-color: none;
+    border: 1px solid #00000069;
+    color: #000000b1;
+    padding: 10px 20px;
+    border-radius: 0;
+    text-decoration: none;
+    transition: 0s ease;
+    margin-right: 20px;
+    z-index: 1;
+}
+
+.cta a:hover {
+    background-color: none;
+    color: #000000;
+    border: 1px solid #000000;
+    animation: none;
+}
+
+.cta i {
+    margin-left: 10px;
+}
+  
+
+.content-title {
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 50px;
+    background: #ffffff;
+}
+  
+  .title-h1 {
+    color: #000000;
+    font-size: 26px;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  .title-description {
+    font-size: 16px;
+    color: #555;
+    margin: 0;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+  .long-line {
+    width: 15vw;
+    border: 1px solid #00000034;
+  }
+  
+  .blog-posts {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .blog-post {
+    background: #ffffff;
+    padding: 0px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 12px 12px 10px 10px;
+    transition: 0.2s ease;
+  }
+
+  .blog-post:hover {
+    border: 1px solid #00000038;
+  }
+
+  .blog-post:hover img {
+    filter: brightness(0.85);
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 0;
+    filter: brightness(0.9);
+    border-radius: 10px;
+    transition: 0.2s ease;
+  }
+  
+  .blog-post h2 {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+  }
+  
+  .blog-post .date {
+    color: #777;
+    font-size: 12px;
+    margin-top: -15px;
+
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .blog-post .excerpt {
+    color: #333;
+    margin-bottom: 0px;
+    font-size: 14px;
+    position: relative; /* Parent element needs to be relatively positioned */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .blog-post .excerpt::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #ffffff, #ffffffd2, #ffffff00);
+    z-index: 1;
+    transition: 1s ease;
+    height: 100%;
+  }
+
+  .blog-post:hover .excerpt::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    z-index: 1;
+    transition: 0.4s ease;
+    height: 0;
+  }
+  
+  .blog-post .read-more {
+    background-color: transparent;
+    color: #df542d;
+    padding: 10px 0;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+  }
+  
+  .blog-post .read-more:hover {
+    color: #b52700;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-posts {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .blog-post {
+      width: 100%;
+    }
+  }
