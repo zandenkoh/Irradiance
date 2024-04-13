@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review | Logarithm Functions</title>
+  <link rel="stylesheet" href="../Functions/functions.css">
+  <link rel="shortcut icon" type="image/png" href="../../../calculus-favicon-3.png">
+  <script src="https://kit.fontawesome.com/a47fae704c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <a class="back" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="return" href="javascript:history.go(-1);"><i class="fa-solid fa-rotate-left"></i></a>
+
+  <div class="content-area">
+    <div class="content">
+      <h1 class="content-title">Logarithm Functions</h1>
+      <p class="content-title-p"></p>        
+
+      <p>
+        In this section we’ll take a look at a function that is related to the exponential functions we looked at in the last section. We will look at logarithms in this section. Logarithms are one of the functions that students fear the most. The main reason for this seems to be that they simply have never really had to work with them. Once they start working with them, students come to realize that they aren’t as bad as they first thought.
+      </p>
+      
+      <p style="text-align: left;">
+        We’ll start with \( b > 0 \), \( b \neq 1 \) just as we did in the last section. Then we have
+      </p>
+      <p style="text-align: center;">\(
+            y = \log_b(x)
+            \)
+            which is equivalent to
+            \(
+            x = b^y
+            \)</p>
+      <p>
+        The first is called logarithmic form and the second is called the exponential form. Remembering this equivalence is the key to evaluating logarithms. The number, \( b \), is called the base.
+      </p>
+      <hr>
+      <p>
+        <strong>Example 1:</strong> Without a calculator give the exact value of each of the following logarithms:
+        <ul>
+          <p>(a) \( \log_2 16 \)</p>
+          <p>(b) \( \log_4 16 \)</p>
+          <p>(c) \( \log_5 625 \)</p>
+          <p>(d) \( \log_9 1,531,441 \)</p>
+          <p>(e) \( \log_1 6 \)</p>
+          <p>(f) \( \log_3 2 \sqrt{27} 8 \)</p>
+        </ul>
+      </p>
+      <hr>
+      <p>
+        There are a couple of special logarithms that arise in many places. These are,
+      </p>
+      
+      <p style="text-align: center;">
+        \(\ln x = \log_e x\) This log is called the natural logarithm
+      </p>
+      
+      <p style="text-align: center;">
+        \(\log x = \log_{10} x\) This log is called the common logarithm
+      </p>
+      
+      <p>
+        In the natural logarithm the base \( e \) is the same number as in the natural exponential logarithm that we saw in the last section. Here is a sketch of both of these logarithms.
+      </p>
+      
+      <p>
+        Graph of \(\ln \left( x \right)\) and \(\log \left( x \right)\). Both are increasing functions that intersect at (1,0) with \(\ln \left( x \right)\) below the graph of \(\log \left( x \right)\) to the left of (1,0) and above the graph of \(\log \left( x \right)\) to the right of (1,0).
+      </p>
+      <img src="https://tutorial.math.lamar.edu/Classes/CalcI/LogFcns_Files/image001.png">
+      <p>
+        From this graph we can get a couple of very nice properties about the natural logarithm that we will use many times in this and later Calculus courses.
+      </p>
+      
+      <p style="text-align: center;">
+        \(\ln x \rightarrow \infty\) as \(x \rightarrow \infty\) \\
+        \(\ln x \rightarrow -\infty\) as \(x \rightarrow 0\), \(x > 0\)
+      </p>
+      
+      <p>
+        Let’s take a look at a couple of more logarithm evaluations. Some of which deal with the natural or common logarithm and some of which don’t.
+      </p>
+      <hr>
+      <p>
+        <strong>Example 2:</strong> Without a calculator give the exact value of each of the following logarithms:
+        <ul>
+          <p>\(\ln 3\sqrt{e}\)</p>
+          <p>\(\log 1000\)</p>
+          <p>\(\log_{16} 16\)</p>
+          <p>\(\log_{23} 1\)</p>
+          <p>\(\log_2 7\sqrt{32}\)</p>
+        </ul>
+      </p>
+      
+      <p>
+        These work exactly the same as previous example so we won’t put in too many details.
+      </p>
+      <hr>
+      <p>
+        <strong>Properties:</strong>
+        <ul>
+          <p>1. The domain of the logarithm function is \( (0, \infty) \). In other words, we can only plug positive numbers into a logarithm! We can’t plug in zero or a negative number.</li>
+          <p>2. The range of the logarithm function is \( (-\infty, \infty) \).</li>
+          <p>3. \( \log_b b = 1 \)</li>
+          <p>4. \( \log_b 1 = 0 \)</li>
+          <p>5. \( \log_b(b^x) = x \)</li>
+          <p>6. \( b^{\log_b x} = x \)</li>
+        </ul>
+      </p>
+      <hr>
+      <p>
+        The last two properties will be especially useful in the next section. Notice as well that these last two properties tell us that,
+      </p>
+      
+      <p>
+        \( f(x) = b^x \) and \( g(x) = \log_b x \) are inverses of each other.
+      </p>
+      
+      <p>
+        Here are some more properties that are useful in the manipulation of logarithms.
+      </p>
+      <hr>
+      <p>
+        <strong>More Properties:</strong>
+        <ul>
+          <p>7. \( \log_b(xy) = \log_b(x) + \log_b(y) \)</li>
+          <p>8. \( \log_b\left(\frac{x}{y}\right) = \log_b(x) - \log_b(y) \)</li>
+          <p>9. \( \log_b(x^r) = r\log_b(x) \)</li>
+        </ul>
+      </p>
+      <hr>
+      <p>
+        Note that there is no equivalent property to the first two for sums and differences. In other words,
+      </p>
+      
+      <p style="text-align: center;">\( \log_b(x+y) \neq \log_b x + \log_b y \)</p>
+      <p style="text-align: center;">\( \log_b(x-y) \neq \log_b x - \log_b y \)</p>
+      <hr>
+      <p>
+        <strong>Example 3:</strong> Write each of the following in terms of simpler logarithms:
+        <ul>
+          <p>\( \ln(x^3y^4z^5) \)</li>
+          <p>\( \log_3(9x^4 \sqrt{y}) \)</li>
+          <p>\( \log\left(x^2 + y^2(x - y)^3\right) \)</li>
+        </ul>
+      </p>
+      <hr>
+      <p>
+        What the instructions really mean here is to use as many of the properties of logarithms as we can to simplify things down as much as we can.
+      </p>
+      <hr>
+      <p>
+        <strong>Example 3:</strong> Write each of the following in terms of simpler logarithms:
+        <ul>
+          <p>\( \ln(x^3y^4z^5) \)</li>
+          <p>\( \log_3(9x^4 \sqrt{y}) \)</li>
+          <p>\( \log\left(x^2 + y^2(x - y)^3\right) \)</li>
+        </ul>
+      </p>
+      <hr>
+      <p>
+        The last topic that we need to look at in this section is the change of base formula for logarithms. The change of base formula is,
+      </p>
+      
+      <p style="text-align: center;">
+        \( \log_b x = \log_a x \cdot \log_a b \)
+      </p>
+      
+      <p>
+        This is the most general change of base formula and will convert from base \( b \) to base \( a \). However, the usual reason for using the change of base formula is to compute the value of a logarithm that is in a base that you can’t easily deal with. Using the change of base formula means that you can write the logarithm in terms of a logarithm that you can deal with. The two most common change of base formulas are
+      </p>
+      
+      <p style="text-align: center;">
+        \( \log_b x = \frac{\ln x}{\ln b} \) and \( \log_b x = \frac{\log x}{\log b} \)
+      </p>
+      
+      <p>
+        In fact, often you will see one or the other listed as THE change of base formula!
+      </p>
+      
+      <p>
+        In the first part of this section we computed the value of a few logarithms, but we could do these without the change of base formula because all the arguments could be written in terms of the base to a power. For instance,
+      </p>
+      
+      <p style="text-align: center;">
+        \( \log_7 49 = 2 \) because \( 7^2 = 49 \)
+      </p>
+      
+      <p>
+        However, this only works because 49 can be written as a power of 7! We would need the change of base formula to compute \( \log_7 50 \).
+      </p>
+      
+      <p style="text-align: center;">
+        \( \log_7 50 = \frac{\ln 50}{\ln 7} = \frac{3.91202300543}{1.94591014906} = 2.0103821378 \) OR
+      </p>
+      
+      <p style="text-align: center;">
+        \( \log_7 50 = \frac{\log 50}{\log 7} = \frac{1.69897000434}{0.845098040014} = 2.0103821378 \)
+      </p>
+      
+      <p>
+        So, it doesn’t matter which we use, we will get the same answer regardless of the logarithm that we use in the change of base formula.
+      </p>
+      
+      <p>
+        Note as well that we could use the change of base formula on \( \log_7 49 \) if we wanted to as well.
+      </p>
+      
+      <p style="text-align: center;">
+        \( \log_7 49 = \frac{\ln 49}{\ln 7} = \frac{3.89182029811}{1.94591014906} = 2 \)
+      </p>
+      
+      <p>
+        This is a lot of work however, and is probably not the best way to deal with this.
+      </p>
+      
+      <p>
+        So, in this section we saw how logarithms work and took a look at some of the properties of logarithms. We will run into logarithms on occasion so make sure that you can deal with them when we do run into them.
+      </p>
+      
+      
+      
+      
+      <div class="next" id="next">
+        <div class="next-lesson">
+            <a href="../review-finish.html">Finish Chapter</a>
+          </div>
+          <!--<div class="next-course">
+            <a href="../../Limits/limits.html">Next Course</a>
+          </div>-->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.sidebar-list a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const href = this.getAttribute('href');
+        const targetElement = document.querySelector(href);
+        const offset = targetElement.offsetTop - (window.innerHeight * 0);
+  
+        scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+});
+  </script>
+</body>
+</html>
+
+      <!-- Embedded YouTube Video
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUvTyaaNkzM?si=aEh-5LHKQfXvL6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>-->
