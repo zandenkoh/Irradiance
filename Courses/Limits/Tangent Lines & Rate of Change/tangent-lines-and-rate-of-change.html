@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limits | Tangent Lines and Rate of Change</title>
+  <link rel="stylesheet" href="../../Review/Functions/functions.css">
+  <link rel="shortcut icon" type="image/png" href="../../../calculus-favicon-3.png">
+  <script src="https://kit.fontawesome.com/a47fae704c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <a class="back" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="return" href="javascript:history.go(-1);"><i class="fa-solid fa-rotate-left"></i></a>
+
+  <div class="content-area">
+    <div class="content">
+      <h1 class="content-title">Tangent Lines and Rate of Change</h1>
+      <p class="content-title-p">In this section we are going to take a look at two fairly important problems in the study of calculus. There are two reasons for looking at these problems now.</p>
+      <p>First, both of these problems will lead us into the study of limits, which is the topic of this chapter after all. Looking at these problems here will allow us to start to understand just what a limit is and what it can tell us about a function.</p>
+      <p>Secondly, the rate of change problem that we're going to be looking at is one of the most important concepts that we'll encounter in the second chapter of this course. In fact, it's probably one of the most important concepts that we'll encounter in the whole course. So, looking at it now will get us to start thinking about it from the very beginning.</p>
+
+      
+      <hr>
+      <p><b>Tangent Lines</b></p>
+      <p>The first problem that we’re going to take a look at is the tangent line problem. Before getting into this problem it would probably be best to define a tangent line.</p>
+      <p>A tangent line to the function \( f(x) \) at the point \( x=a \) is a line that just touches the graph of the function at the point in question and is “parallel” (in some way) to the graph at that point. Take a look at the graph below.</p>
+      <img src="https://tutorial.math.lamar.edu/Classes/CalcI/Tangents_Rates_Files/image001.png">
+      <p>In this graph the line is a tangent line at the indicated point because it just touches the graph at that point and is also “parallel” to the graph at that point. Likewise, at the second point shown, the line does just touch the graph at that point, but it is not “parallel” to the graph at that point and so it’s not a tangent line to the graph at that point.</p>
+      <p>At the second point shown (the point where the line isn’t a tangent line) we will sometimes call the line a secant line.</p>
+      <p>We’ve used the word parallel a couple of times now and we should probably be a little careful with it. In general, we will think of a line and a graph as being parallel at a point if they are both moving in the same direction at that point. So, in the first point above the graph and the line are moving in the same direction and so we will say they are parallel at that point. At the second point, on the other hand, the line and the graph are not moving in the same direction so they aren’t parallel at that point.</p>
+      
+      <hr>
+      <p><b>Rates of Change</b></p>
+      <p>The next problem that we need to look at is the rate of change problem. As mentioned earlier, this will turn out to be one of the most important concepts that we will look at throughout this course.</p>
+      <p>Here we are going to consider a function, \( f(x) \), that represents some quantity that varies as \( x \) varies. For instance, maybe \( f(x) \) represents the amount of water in a holding tank after \( x \) minutes. Or maybe \( f(x) \) is the distance traveled by a car after \( x \) hours. In both of these example we used \( x \) to represent time. Of course \( x \) doesn’t have to represent time, but it makes for examples that are easy to visualize.</p>
+      <p>What we want to do here is determine just how fast \( f(x) \) is changing at some point, say \( x=a \) . This is called the <b>instantaneous rate of change</b> or sometimes just <b>rate of change</b> of \( f(x) \) at \( x=a \) .</p>
+      <p>As with the tangent line problem all that we’re going to be able to do at this point is to estimate the rate of change. So, let’s continue with the examples above and think of \( f(x) \) as something that is changing in time and \( x \) being the time measurement. Again, \( x \) doesn’t have to represent time but it will make the explanation a little easier. While we can’t compute the instantaneous rate of change at this point we can find the average rate of change.</p>
+      <p>To compute the average rate of change of \( f(x) \) at \( x=a \) all we need to do is to choose another point, say \( x \) , and then the average rate of change will be,</p>
+      <p style="text-align: center; font-size: 23px;">\(\text{ARC (Average Rate of Change)} = \frac{\text{change in } f(x)}{\text{change in } x} = \frac{f(x) - f(a)}{x - a}\)</p>
+      <p>Then to estimate the instantaneous rate of change at \( x=a \) all we need to do is to choose values of \( x \) getting closer and closer to \( x=a \) (don’t forget to choose them on both sides of \( x=a \) ) and compute values of \( A . R . C \). We can then estimate the instantaneous rate of change from that.</p>
+
+      <hr>
+      <p><b>Velocity Problem</b></p>
+      <p>Let’s briefly look at the velocity problem. Many calculus books will treat this as its own problem. We however, like to think of this as a special case of the rate of change problem. In the velocity problem we are given a position function of an object, \( f(t) \) , that gives the position of an object at time \( t \) . Then to compute the instantaneous velocity of the object we just need to recall that the velocity is nothing more than the rate at which the position is changing.</p>
+      <p>In other words, to estimate the instantaneous velocity we would first compute the average velocity,</p>
+      <p style="text-align: center; font-size: 23px;">\(\text{AV (Average Velocity)} = \frac{\text{change in position}}{\text{time traveled}} = \frac{f(t) - f(a)}{t - a}\)</p>
+      <P>and then take values of \( t \) closer and closer to \( t=a \) and use these values to estimate the instantaneous velocity.</P>
+
+      <hr>
+      <p><b>Change of Notation</b></p>
+      <p>There is one last thing that we need to do in this section before we move on. The main point of this section was to introduce us to a couple of key concepts and ideas that we will see throughout the first portion of this course as well as get us started down the path towards limits.</p>
+      <p id="1" style="margin-top: 40px;">Before we move into limits officially let’s go back and do a little work that will relate both (or all three if you include velocity as a separate problem) problems to a more general concept.</p>
+      <p>First, notice that whether we wanted the tangent line, instantaneous rate of change, or instantaneous velocity each of these came down to using exactly the same formula. Namely,</p>
+      <p style="text-align: center; font-size: 27px;">\( \frac{f(x) - f(a)}{x - a}\)</p>
+      <p style="text-align: center; user-select: none;"><b>This formula is (1)</b></p>
+      <p>This should suggest that all three of these problems are then really the same problem. In fact this is the case as we will see in the next chapter. We are really working the same problem in each of these cases the only difference is the interpretation of the results.</p>
+      <p>In preparation for the next section where we will discuss this in much more detail we need to do a quick change of notation. It’s easier to do here since we’ve already invested a fair amount of time into these problems.</p>
+      <p>In all of these problems we wanted to determine what was happening at \( x=a \) . To do this we chose another value of x and plugged into <a style="text-decoration: none;" href="#1"><b>(1)</b></a>. For what we were doing here that is probably most intuitive way of doing it. However, when we start looking at these problems as a single problem <a style="text-decoration: none;" href="#1"><b>(1)</b></a> will not be the best formula to work with.</p>
+      <p>What we’ll do instead is to first determine how far from \( x = a \) we want to move and then define our new point based on that decision. So, if we want to move a distance of \( h \) from \( x=a \) the new point would be \( x=a+h \) . This is shown in the sketch below.</p>
+      <img src="https://tutorial.math.lamar.edu/Classes/CalcI/Tangents_Rates_Files/image004.gif">
+      <p>As we saw in our work above it is important to take values of \( x \) that are both sides of \( x=a \) . This way of choosing new value of \( x \) will do this for us as we can see in the sketch above. If \( h > 0 \) we will get value of \( x \) that are to the right of \( x=a \) and if \( h < 0 \) we will get values of \( x \) that are to the left of \( x=a \) and both are given by \( x=a+h \) .</p>
+      <p>Now, with this new way of getting a second value of \( x \), <a style="text-decoration: none;" href="#1"><b>(1)</b></a> will become,</p>
+      <p>\[\frac{f(x) - f(a)}{x-a} = \frac{f(a + h) - f(a)}{a + h - a} = \frac{f(a + h) - f(a)}{h}\]</p>
+      <p>Now, this is for a specific value of \( x \) , i.e. \( x=a \) and we’ll rarely be looking at these at specific values of \( x \) . So, we take the final step in the above equation and replace the \( a \) with \( x \) to get,</p>
+      <p>\[\frac{f(x + h) - f(x)}{h}\]</p>
+      <p>This gives us a formula for a general value of \( x \) and on the surface it might seem that this is going to be an overly complicated way of dealing with this stuff. However, as we will see it will often be easier to deal with this form than it will be to deal with the original form, <a style="text-decoration: none;" href="#1"><b>(1)</b></a>.</p>
+        
+      <!-- Embedded YouTube Video
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUvTyaaNkzM?si=aEh-5LHKQfXvL6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>-->
+      <hr>
+
+      <div class="next" id="next">
+        <div class="next-lesson">
+            <a href="../Inverse Functions/inverse-functions.html">Next Lesson</a>
+          </div>
+          <!--<div class="next-course">
+            <a href="../../Limits/limits.html">Next Course</a>
+          </div>-->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.sidebar-list a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const href = this.getAttribute('href');
+        const targetElement = document.querySelector(href);
+        const offset = targetElement.offsetTop - (window.innerHeight * 0);
+  
+        scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+});
+  </script>
+</body>
+</html>
