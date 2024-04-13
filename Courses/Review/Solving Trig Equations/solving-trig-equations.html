@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review | Solving Trigonometry Equations</title>
+  <link rel="stylesheet" href="../Functions/functions.css">
+  <link rel="shortcut icon" type="image/png" href="../../../calculus-favicon-3.png">
+  <script src="https://kit.fontawesome.com/a47fae704c.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+    <a class="back" href="../../../index.html"><i class="fa-solid fa-house"></i></a>
+    <a class="return" href="javascript:history.go(-1);"><i class="fa-solid fa-rotate-left"></i></a>
+
+  <div class="content-area">
+    <div class="content">
+      <h1 class="content-title">Solving Trigonometry Equations</h1>
+      <p class="content-title-p"></p>        
+      <p>Let's just jump into the examples and see how to solve trig equations.</p>
+      <hr>
+      <p><b>Example 1:</b> Solve \( 2\cos(t) = \sqrt{3} \)</p>
+      <p>There’s really not a whole lot to do in solving this kind of trig equation. We first need to get the trig function on one side by itself. To do this all we need to do is divide both sides by 2.</p>
+      <p>\[ 2\cos(t) = \sqrt{3} \]</p>
+      <p>\[ \cos(t) = \frac{\sqrt{3}}{2} \]</p>
+      <p>We are looking for all the values of \( t \) for which cosine will have the value of \( \frac{\sqrt{3}}{2} \). So, let’s take a look at the following unit circle:</p>
+      <img src="https://tutorial.math.lamar.edu/Classes/CalcI/TrigEquations_Files/image002.png" alt="Unit Circle Image">
+
+      <p>From quick inspection we can see that \( t = \frac{\pi}{6} \) is a solution. However, as we have shown on the unit circle there is another angle which will also be a solution. We need to determine what this angle is.</p>
+      
+      <p>To find this angle for this problem all we need to do is use a little geometry. The angle in the first quadrant makes an angle of \( \frac{\pi}{6} \) with the positive \( x \)-axis, then so must the angle in the fourth quadrant. So, we have two options. We could use \( -\frac{\pi}{6} \), but again, it’s more common to use positive angles. To get a positive angle all we need to do is use the fact that the angle is \( \frac{\pi}{6} \) with the positive \( x \)-axis (as noted above) and a positive angle will be:</p>
+      <p>\[ t = 2\pi - \frac{\pi}{6} = \frac{11\pi}{6} \]</p>
+
+      <p>One way to remember how to get the positive form of the second angle is to think of making one full revolution from the positive \( x \)-axis (i.e. \( 2\pi \)) and then backing off (i.e. subtracting) \( \frac{\pi}{6} \).</p>
+
+      <p>We aren’t done with this problem. Since there isn’t anything in this problem to tell us which is the correct solution, we will need to list ALL possible solutions.</p>
+      
+      <p>This is very easy to do. Recall from the previous section and you’ll see there that we used:</p>
+      <p>\[ \frac{\pi}{6} + 2\pi n, \quad n = 0, \pm 1, \pm 2, \pm 3, \ldots \]</p>
+      <p>to represent all the possible angles that can end at the same location on the unit circle, i.e. angles that end at \( \frac{\pi}{6} \). The same thing can be done for the second solution.</p>
+      
+      <p>So, all together the complete solution to this problem is:</p>
+      <p>\[ t = \frac{\pi}{6} + 2\pi n, \quad n = 0, \pm 1, \pm 2, \pm 3, \ldots \]</p>
+      <p>\[ t = \frac{11\pi}{6} + 2\pi n, \quad n = 0, \pm 1, \pm 2, \pm 3, \ldots \]</p>
+      <p>As a final thought, notice that we can get \( -\frac{\pi}{6} \) by using \( n = -1 \) in the second solution.</p>
+
+
+      <hr>
+      <p>Now, in a calculus class this is not a typical trig equation that we’ll be asked to solve. A more typical example is the next one.</p>
+      
+      <hr>
+      <p><b>Example 2:</b> Solve \(2 \cos(t) = \sqrt{3}\) on \([-2\pi, 2\pi]\).</p>
+      <p>In a calculus class, we are often more interested in only the solutions to a trig equation that fall in a certain interval. The first step in this kind of problem is to find all possible solutions. We did this in the previous example.</p>
+      <p>\[ \pi/6 + 2\pi n, \quad n = 0, \pm 1, \pm 2, \pm 3, \ldots \]</p>
+      <p>\[ 11\pi/6 + 2\pi n, \quad n = 0, \pm 1, \pm 2, \pm 3, \ldots \]</p>
+      <p>Now, to find the solutions in the interval \([-2\pi, 2\pi]\), all we need to do is start picking values of \( n \), plugging them in and getting the solutions that will fall into the interval that we’ve been given.</p>
+      <p>\( n = 0 \):</p>
+      <p>\[ \pi/6 + 2\pi (0) = \pi/6 < 2\pi \]</p>
+      <p>\[ 11\pi/6 + 2\pi (0) = 11\pi/6 < 2\pi \]</p>
+      <p>Notice that if we take any positive value of \( n \), we will be adding on positive multiples of \( 2\pi \) onto a positive quantity, and this will take us past the upper bound of our interval, so we don’t need to take any positive value of \( n \).</p>
+      <p>\( n = -1 \):</p>
+      <p>\[ \pi/6 + 2\pi (-1) = -11\pi/6 > -2\pi \]</p>
+      <p>\[ 11\pi/6 + 2\pi (-1) = -\pi/6 > -2\pi \]</p>
+      <p>These are both greater than \( -2\pi \), and so are solutions. But if we subtract another \( 2\pi \) off (i.e. use \( n = -2 \)), we will once again be outside of the interval. So, we’ve found all the possible solutions that lie inside the interval \([-2\pi, 2\pi]\).</p>
+      <p>So, the solutions are: \( \pi/6, 11\pi/6, -\pi/6, -11\pi/6 \).</p>
+      <div class="next" id="next">
+        <div class="next-lesson">
+            <a href="../Exponential Functions/exponential-functions.html">Next Lesson</a>
+          </div>
+          <!--<div class="next-course">
+            <a href="../../Limits/limits.html">Next Course</a>
+          </div>-->
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    const links = document.querySelectorAll('.sidebar-list a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        const href = this.getAttribute('href');
+        const targetElement = document.querySelector(href);
+        const offset = targetElement.offsetTop - (window.innerHeight * 0);
+  
+        scroll({
+          top: offset,
+          behavior: 'smooth'
+        });
+      });
+    });
+});
+  </script>
+</body>
+</html>
+
+      <!-- Embedded YouTube Video
+      <div class="youtube-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WUvTyaaNkzM?si=aEh-5LHKQfXvL6uu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>-->
